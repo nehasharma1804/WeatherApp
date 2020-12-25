@@ -1,0 +1,30 @@
+<p>country-weather works!</p>
+<mat-grid-list cols="4"  rowHeight="5:1" >
+    <div style="margin-top: 50px;font-weight: bold;"align="center">{{this.countryCapital}},{{this.countryId}}</div>
+    <mat-grid-tile [colspan]="1"
+    [rowspan]="1"
+    [style.background]="lightblue">Temperature: </mat-grid-tile>
+   <mat-grid-tile [colspan]="1"
+   [rowspan]="1"
+   [style.background]="lightblue">{{temperature}}</mat-grid-tile>
+   <mat-grid-tile [colspan]="1"
+    [rowspan]="1"
+    [style.background]="lightblue">Percipitation: </mat-grid-tile>
+   <mat-grid-tile [colspan]="1"
+   [rowspan]="1"
+   [style.background]="lightblue">{{humidity}}</mat-grid-tile>
+   <mat-grid-tile [colspan]="1"
+   [rowspan]="1"
+   [style.background]="lightblue">Wind Speed: </mat-grid-tile>
+  <mat-grid-tile [colspan]="1"
+  [rowspan]="1"
+  [style.background]="lightblue">{{windDetails.speed}}</mat-grid-tile>
+  <mat-grid-tile [colspan]="1"
+   [rowspan]="1"
+   [style.background]="lightblue">Wind Deg: </mat-grid-tile>
+  <mat-grid-tile [colspan]="1"
+  [rowspan]="1"
+  [style.background]="lightblue">{{windDetails.deg}}</mat-grid-tile>
+  
+</mat-grid-list>
+
