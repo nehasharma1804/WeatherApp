@@ -5,14 +5,17 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CountriesComponent } from './countries/countries.component';
-import { CountryWeatherComponent } from './country-weather/country-weather.component';
+
+import { GameServiceService } from './game-service.service';
+import { BoardComponent } from './board/board.component';
+import { SquareComponent } from './square/square.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountriesComponent,
-    CountryWeatherComponent
+    BoardComponent,
+    SquareComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,7 @@ import { CountryWeatherComponent } from './country-weather/country-weather.compo
     MatGridListModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [GameServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

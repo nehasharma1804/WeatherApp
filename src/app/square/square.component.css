@@ -1,0 +1,19 @@
+.game-square { 
+    height: 96%; 
+    text-align: center;
+    cursor: pointer;
+    border: black solid 1px;
+    line-height: 0.85;
+  }
+
+  p { 
+    display: inline;
+    margin: 0px;
+    font-size: 14rem;
+    height: 96%;
+    
+  }
+
+  .noClick {
+    pointer-events: none;
+  }
